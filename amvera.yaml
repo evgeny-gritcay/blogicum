@@ -1,0 +1,12 @@
+meta:
+  environment: python
+  toolchain:
+    name: pip
+    version: '3.11'
+run:
+  command: >
+    python3 manage.py migrate &&
+    python3 manage.py collectstatic --noinput &&
+    gunicorn --bind 0.0.0.0:80 blogicum.wsgi
+  persistenceMount: /data
+  containerPort: 80

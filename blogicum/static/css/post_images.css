@@ -1,0 +1,13 @@
+/* Маленькая картинка (для ленты/списка) */
+.post-preview-img {
+    max-width: 200px !important; /* !important гарантирует, что Bootstrap не победит */
+    height: auto;
+    display: block;
+}
+
+/* Большая картинка (для страницы поста) */
+.post-detail-img {
+  max-width: 800px;
+  height: auto;
+  object-fit: contain;
+}

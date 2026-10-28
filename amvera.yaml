@@ -8,6 +8,7 @@ run:
     cd blogicum &&
     python3 manage.py migrate &&
     python3 manage.py collectstatic --noinput &&
+    python3 manage.py loaddata base.json &&
     gunicorn --bind 0.0.0.0:80 blogicum.wsgi
   persistenceMount: /data
   containerPort: 80

@@ -5,6 +5,7 @@ meta:
     version: '3.11'
 run:
   command: >
+    cd blogicum &&
     python3 manage.py migrate &&
     python3 manage.py collectstatic --noinput &&
     gunicorn --bind 0.0.0.0:80 blogicum.wsgi

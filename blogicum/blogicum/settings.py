@@ -8,7 +8,7 @@ TEMPLATES_DIR = BASE_DIR / 'templates'
 SECRET_KEY = os.environ.get('SECRET_KEY', 'временно-для-локалки')
 
 ALLOWED_HOSTS = ['blogicum-evgenyg.mia0.amvera.tech', '127.0.0.1', 'localhost']
-CSRF_TRUSTED_ORIGINS = ['https://blogicum-evgenyg.mia0.amvera.tech']git remote -v
+CSRF_TRUSTED_ORIGINS = ['https://blogicum-evgenyg.mia0.amvera.tech']
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [

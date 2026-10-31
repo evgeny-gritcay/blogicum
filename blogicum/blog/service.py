@@ -8,7 +8,8 @@ from .constants import POSTS_PER_PAGE
 
 def get_published_posts(queryset=None, *, need_filter=True, need_count=True):
     """Возвращает QuerySet постов с опциональной фильтрацией и подсчётом."""
-    queryset = queryset or Post.objects
+    if queryset is None:
+        queryset = Post.objects.all()
     queryset = queryset.select_related('author', 'category', 'location')
     if need_count:
         queryset = queryset.annotate(comment_count=Count('comments'))

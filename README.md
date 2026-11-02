@@ -42,8 +42,7 @@
 git clone <URL-репозитория>
 cd blogicum
 
-2. Создание виртуального окружения и установка зависимостей
-
+### 2. Создание виртуального окружения и установка зависимостей
 python -m venv venv
 # Для Windows:
 venv\Scripts\activate
@@ -52,34 +51,32 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-3. Миграции и суперпользователь
-
+### 3. Миграции и суперпользователь
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
 
-4. Загрузка фикстур (опционально)
+### 4. Загрузка фикстур (опционально)
 Если есть JSON-фикстуры для наполнения тестовыми данными:
 python manage.py loaddata fixtures/db.json
 
-5. Запуск сервера
-
+### 5. Запуск сервера
 python manage.py runserver
 
 Проект будет доступен по адресу: http://127.0.0.1:8000/
 
 
-Основные маршруты (URL)
-Путь	Описание
-/	Главная страница: лента опубликованных постов
-/auth/login/	Страница входа
+## Основные маршруты (URL)
+Путь    	            Описание
+
+/	                    Главная страница: лента опубликованных постов
+/auth/login/	        Страница входа
 /profile/<username>/	Профиль пользователя: его посты
-/admin/	Django Admin
-/pages/404/	Кастомная страница 404 (для тестов)
-/pages/403/	Кастомная страница 403 (для тестов)
+/admin/	                Django Admin
+/pages/404/	            Кастомная страница 404 (для тестов)
+/pages/403/	            Кастомная страница 403 (для тестов)
 
-Структура проекта
-
+## Структура проекта
 blogicum/
 ├── .gitignore
 ├── .mypy_cache/
@@ -134,13 +131,12 @@ blogicum/
     └── test_views.py
 
 ## Ссылки
-
 🔗 Деплой (Amvera): https://blogicum-evgenyg.mia0.amvera.tech
 
-Лицензия
+## Лицензия
 Проект распространяется под лицензией MIT.
 
-Полезные команды
+## Полезные команды
 Команда	Описание
 python manage.py shell	Интерактивная консоль Django (ORM)
 python manage.py collectstatic	Сбор статики в STATIC_ROOT

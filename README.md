@@ -38,33 +38,41 @@
 
 ### 1. Клонирование репозитория
 
-'''bash
+```bash
 git clone <URL-репозитория>
 cd blogicum
-
+```
 ### 2. Создание виртуального окружения и установка зависимостей
+```bash
 python -m venv venv
+```
 #### Для Windows:
+```bash
 venv\Scripts\activate
+```
 #### Для macOS/Linux:
+```bash
 source venv/bin/activate
 
 pip install -r requirements.txt
-
+```
 ### 3. Миграции и суперпользователь
+```bash
 python manage.py makemigrations
 python manage.py migrate
 python manage.py createsuperuser
-
+```
 ### 4. Загрузка фикстур (опционально)
+```bash
 Если есть JSON-фикстуры для наполнения тестовыми данными:
 python manage.py loaddata fixtures/db.json
-
+```
 ### 5. Запуск сервера
+```bash
 python manage.py runserver
 
 Проект будет доступен по адресу: http://127.0.0.1:8000/
-
+```
 
 ## Основные маршруты (URL)
 ```text

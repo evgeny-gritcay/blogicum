@@ -44,9 +44,9 @@ cd blogicum
 
 ### 2. Создание виртуального окружения и установка зависимостей
 python -m venv venv
-# Для Windows:
+#### Для Windows:
 venv\Scripts\activate
-# Для macOS/Linux:
+#### Для macOS/Linux:
 source venv/bin/activate
 
 pip install -r requirements.txt
@@ -67,6 +67,7 @@ python manage.py runserver
 
 
 ## Основные маршруты (URL)
+'''
 Путь    	            Описание
 
 /	                    Главная страница: лента опубликованных постов
@@ -74,9 +75,10 @@ python manage.py runserver
 /profile/<username>/	Профиль пользователя: его посты
 /admin/	                Django Admin
 /pages/404/	            Кастомная страница 404 (для тестов)
-/pages/403/	            Кастомная страница 403 (для тестов)
+/pages/403/	            Кастомная страница 403 (для тестов)'''
 
 ## Структура проекта
+'''
 blogicum/
 ├── .gitignore
 ├── .mypy_cache/
@@ -128,20 +130,13 @@ blogicum/
 ├── static/
 └── tests/
     ├── __init__.py
-    └── test_views.py
+    └── test_views.py'''
 
 ## Ссылки
 🔗 Деплой (Amvera): https://blogicum-evgenyg.mia0.amvera.tech
 
 ## Лицензия
 Проект распространяется под лицензией MIT.
-
-## Полезные команды
-Команда	Описание
-python manage.py shell	Интерактивная консоль Django (ORM)
-python manage.py collectstatic	Сбор статики в STATIC_ROOT
-python manage.py dumpdata blog.post > fixtures/posts.json	Экспорт данных постов
-python manage.py loaddata fixtures/posts.json	Загрузка данных из фикстуры
 
 ## Автор: Евгений Грицай
 ## Год: 2026

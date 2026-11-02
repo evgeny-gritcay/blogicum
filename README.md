@@ -67,7 +67,7 @@ python manage.py runserver
 
 
 ## Основные маршруты (URL)
-'''
+```text
 Путь    	            Описание
 
 /	                    Главная страница: лента опубликованных постов
@@ -75,10 +75,10 @@ python manage.py runserver
 /profile/<username>/	Профиль пользователя: его посты
 /admin/	                Django Admin
 /pages/404/	            Кастомная страница 404 (для тестов)
-/pages/403/	            Кастомная страница 403 (для тестов)'''
+/pages/403/	            Кастомная страница 403 (для тестов)
 
 ## Структура проекта
-'''
+```text
 blogicum/
 ├── .gitignore
 ├── .mypy_cache/
@@ -130,7 +130,7 @@ blogicum/
 ├── static/
 └── tests/
     ├── __init__.py
-    └── test_views.py'''
+    └── test_views.py
 
 ## Ссылки
 🔗 Деплой (Amvera): https://blogicum-evgenyg.mia0.amvera.tech

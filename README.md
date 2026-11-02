@@ -38,7 +38,7 @@
 
 ### 1. Клонирование репозитория
 
-```bash
+'''bash
 git clone <URL-репозитория>
 cd blogicum
 
@@ -143,5 +143,5 @@ python manage.py collectstatic	Сбор статики в STATIC_ROOT
 python manage.py dumpdata blog.post > fixtures/posts.json	Экспорт данных постов
 python manage.py loaddata fixtures/posts.json	Загрузка данных из фикстуры
 
-Автор: Евгений Грицай
-Год: 2026
+## Автор: Евгений Грицай
+## Год: 2026
